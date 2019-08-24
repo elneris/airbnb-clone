@@ -22,12 +22,6 @@ class HomeController extends AbstractController
      */
     public function home()
     {
-        $names = ["Lior" => 31, "Elneris" => 29];
-
-        return $this->render('home.html.twig', [
-            'title' => 'Bonjour',
-            'age' => 12,
-            'names' => $names
-        ]);
+        return $this->render('home.html.twig');
     }
 }
